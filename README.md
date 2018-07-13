@@ -1,3 +1,31 @@
+Пока ничего не доделано :(
+
+Требования.
+
+Обязательно:
+
+● Использовать пакетный менеджер (npm, yarn).
+● Использовать систему контроля версий - git.
+● Использовать спрайты для изображений.
+● Все, что можно сделать через CSS, сделать через CSS.
+● Все сообщения должны создаваться динамически.
+● Верстка картинками запрещена.
+
+Желательно:
+
+● Использовать сборщики Gulp или Webpack.
+● Использовать ES6+, Babel, ESLint
+● Использовать CSS препроцессор (SCSS, Stylus)
+● Использовать Pug (Jade) вместо html
+● Код должен должен следовать https://github.com/airbnb/javascript.
+
+Исходный код нужно разместить в приватном репозитории на bitbucket и предоставить нам доступ.
+
+Ставил толькo EventEmmiter
+
+
+
+
 <img src="https://raw.githubusercontent.com/flexdinesh/react-redux-boilerplate/master/app/components/Header/images/banner.jpg" alt="react redux boilerplate banner" align="center" />
 
 <br />
