@@ -1,0 +1,405 @@
+// ---------- Production ----------
+
+.production {
+	display: flex;
+	flex-direction: column;  
+	flex: 0 0 600px;
+
+	color: #fff;
+	//background: blue;
+
+	&__header {
+		color: $blue;
+		font-size: 17px;
+		display: flex;
+		justify-content: center;
+		margin-top: -17px;
+	}
+
+	&__tiles {
+		display: flex;
+		//justify-content: space-around;
+		justify-content: center;
+		//margin-top: -300px;
+		//margin-bottom: 80px;
+		height: 400px;
+		//background: orange;
+	}
+
+	// ---------- CHECKBAR ----------
+
+	&__tile-checkbar {
+		font-size: 14px;
+		//width: 40%;
+		//width: 33%;
+		//margin: 0px 0px 0px 0px;
+
+		padding: 146px 30px 20px 160px;
+		width: 400px;
+		//background: green;
+	}
+
+	&__checkbar-top {
+		display: flex;
+		//position: relative;
+		align-items: center;
+		flex-direction: row;
+		//background: red;
+		//padding: 0px 30px 0px 16px;
+
+	}
+
+	&__checkbar-gender {
+		//background: black;
+	}
+
+	&__gender-btn-1 {
+		@include bar-btn;
+		position: relative;
+		left: 17px;
+		//background: black;
+
+		&:befor {
+			@include bar-btn-2;
+		}
+
+		&:hover {
+			@include bar-btn-3;
+		}
+
+		&:active {
+			@include bar-btn-4;
+		}
+	}
+
+	&__gender-btn-2 {
+		@include bar-btn;
+		position: relative;
+		left: 22px;
+		//background: black;
+
+		&:befor {
+			@include bar-btn-2;
+		}
+
+		&:hover {
+			@include bar-btn-3;
+		}
+
+		&:active {
+			@include bar-btn-4;
+		}
+	}
+
+	&__checkbar-bot {
+		margin: 18px 0;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	&__color-btn-1 {
+		@include bar-btn;
+		position: relative;
+		left: 11px;
+		//background: black;
+
+		&:befor {
+			@include bar-btn-2;
+		}
+
+		&:hover {
+			@include bar-btn-3;
+		}
+
+		&:active {
+			@include bar-btn-4;
+		}
+	}
+
+	&__color-btn-2 {
+		@include bar-btn;
+		position: relative;
+		left: 17px;
+		//background: black;
+
+		&:befor {
+			@include bar-btn-2;
+		}
+
+		&:hover {
+			@include bar-btn-3;
+		}
+
+		&:active {
+			@include bar-btn-4;
+		}
+	}
+
+	&__genderactive {
+		@include bar-btn-3;
+	}
+
+	// ---------- BAR ----------
+
+	&__bars {		
+		display: flex;
+		//background: red;
+		width: 300px;
+		margin: 0px auto 0px auto; // Центрирование
+		position: relative;
+		bottom: 126px;
+		right: 249px;
+
+		align-items: center;
+		flex-direction: row;
+		//justify-content: center;
+	}
+
+	&__barhand-init {
+		position: relative;
+		outline: none;
+  		//display: block;
+ 		min-width: 44px;
+ 		min-height: 106px;
+  		background: url(../images/sex_hand_0.png) no-repeat; 
+  		margin: 0 0 0 4px;
+	}
+
+	&__barhand-clickable {
+  		display: block;
+  		background: url(../images/sex_hand.png) no-repeat; 
+  		//min-width: 44px;
+  		//min-height: 110px;
+	}
+
+	&__barhand-clicked {
+  		background: url(../images/sex_hand_2.png) no-repeat; 
+	}
+
+	&__barhand-init-r {
+		outline: none;
+  		//display: block;
+ 		min-width: 44px;
+ 		min-height: 106px;
+  		background: url(../images/sex_hand_0.png) no-repeat; 
+  		margin: 0 0 0 4px;
+	}
+
+
+	&__barhand-clickable-r {
+  		display: block;
+  		background: url(../images/sex_hand.png) no-repeat; 
+  		//min-width: 44px;
+  		//min-height: 110px;
+  		position: relative;
+  		right: -2px;
+	}
+
+	&__barhand-clicked-r {
+  		background: url(../images/sex_hand_2.png) no-repeat; 
+	}
+
+	&__barleg__init {
+	    outline: none;
+	    display: block;
+  	    min-width: 49px;
+  	    min-height: 106px;
+  	    background: url(../images/sex_leg_0.png) no-repeat; 
+  	    margin:0 0 0 4px;
+  	    position: relative;
+  		right: -6px;
+	}
+
+	&__barleg-clickable {
+ 		display: block;
+  		background: url(../images/sex_leg.png) no-repeat; 
+  		min-width: 49px;
+  		min-height: 110px;
+  		margin: 0 0 0 4px;
+	}
+
+	&__barleg-clicked {
+  		background: url(../images/sex_leg_2.png) no-repeat; 
+	}
+
+	&__barleg_init-r {
+	    outline: none;
+	    display: block;
+  	    min-width: 49px;
+  	    min-height: 106px;
+  	    background: url(../images/sex_leg_0.png) no-repeat; 
+  	    margin:0 0 0 4px;
+  	    position: relative;
+  		right: -4px;
+	}
+
+	&__barleg-clickable-r {
+ 		display: block;
+  		background: url(../images/sex_leg.png) no-repeat; 
+  		min-width: 49px;
+  		min-height: 110px;
+  		margin: 0 0 0 4px;
+	}
+
+	&__barleg-clicked-r {
+  		background: url(../images/sex_leg_2.png) no-repeat; 
+	}
+
+
+	&__gherkin-init  {
+		outline: none;
+	    display: block;
+  	    min-width: 56px;
+  	    min-height: 106px;
+  	    margin:0 0 0 4px;
+
+ 		background: url(../images/sex_gherkin_0.png) no-repeat; 
+ 		position: relative;
+  		right: -12px;
+	}
+
+	&__gherkin-clickable {
+  		//outline: none;
+  		display: block;
+  		min-width: 56px;
+  		min-height: 108px;
+  		background: url(../images/sex_gherkin.png) no-repeat; 
+  		margin:0 0 0 4px;
+	}
+
+
+	&__gherkin-clicked {
+  		//display: block;
+  		background: url(../images/sex_gherkin_2.png) no-repeat; 
+  		//min-width: 56px;
+  		//min-height: 110px;
+	}
+
+	// ---------- MIDDLE-TILE ----------
+
+	&__tile-middle {
+		//width: 33%;
+
+		padding: 174px 20px 0 0 ;
+		margin: 0px 0px 0px 0px;
+		width: 300px;
+		//background: green;
+	}
+
+	&__tooltip {
+		padding: 0px 0px 0px 0px;
+		margin: 0px 10px 0px 136px;
+		width: 106px;
+		height: 50px;
+		//background: orange;
+
+		/*&::after {
+			content: "";
+    		position: absolute;
+    		top: 157%;
+    		left: 50%;
+    		margin-left: 27px;
+    		//border-width: 5px;
+    		border-width:40px 0px 0 8px;
+    		border-style: solid;
+    		border-color: #C1CBD4 transparent transparent transparent;
+		}*/
+	}
+
+	&__tooltiptext {
+		padding: 6px 8px;
+		font-size: 12px;
+		line-height: 116%;
+
+		background-color: #C1CBD4;
+    	color: #173857;
+    	text-align: center;
+    	border-radius: 6px;
+    	text-align: left;
+	}
+
+	&__tooltip-inline {
+		display: inline-block;
+	}
+
+	&__kotel-block {
+		display: flex;
+	}
+
+	&__kotel {
+		padding: 42px 0px 0px 84px;
+		//width: 2px;
+		height: 167px;
+	}
+
+	&__strelka-1 {
+		//width: 20px;
+		font-size: 36px;
+		position: relative;
+		top: 82px;
+		left: 62px;
+		height: 40px;
+	}
+
+	&__strelka-2 {
+		font-size: 36px;
+		position: relative;
+		top: 82px;
+		left: -632px;
+
+		height: 40px;
+	}
+
+	&__create-btn {
+		@include green-btn;
+		position: relative;
+		top: -14px;
+		right: -50px;
+
+		width: 182px;
+	}
+
+	&__create-btn:hover {
+		@include green-btn-2;
+	}
+
+	&__create-btn:active {
+		@include green-btn-3;
+	}
+
+	&__create-btn:after {
+		@include green-btn-4;
+	}
+
+	&__create-btn:active:after {
+		@include green-btn-5;
+	}
+
+	&__create-btn-sub {
+		position: relative;
+		font-size: 14px;
+		color: #757F89;
+		padding: -10px 0px 0px 0px;
+		top: -8px;
+		left: 52px;
+
+	}
+
+	// ---------- TileMan ----------
+
+	&__tile-man {
+		//width: 33%;
+		width: 400px;
+		padding: 12px 100px 0px 0px;
+	}
+
+	&__man {
+
+	}
+
+	&__opacity {
+		opacity: 0.3;
+	}
+
+}

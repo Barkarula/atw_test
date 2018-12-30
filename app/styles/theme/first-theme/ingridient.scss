@@ -1,0 +1,272 @@
+// ---------- Ingridients ----------
+
+$ing-height: 260px;
+
+.ingridient {
+	display: flex;
+	flex-direction: column;  
+	flex: 0 0 $ing-height;
+
+	color: #fff;
+	//background: blue;
+
+	&__header {
+		color: $blue;
+		display: flex;
+		justify-content: center;
+		margin-top: -17px;
+	}
+
+	&__tiles {
+		display: flex;
+		justify-content: center;
+		//margin-top: -300px;
+		//margin-bottom: 80px;
+		//height: 500px;
+
+		margin-top: 28px;
+		//background: orange;
+	}
+
+	// ----------- TOP BLOCK ----------
+
+	&__top_block_h {
+		display: flex;
+		//justify-content: center;
+		justify-content: space-around;
+		//background: red;
+		padding: 0px 40px 0px 40px;
+
+
+	}
+
+	&__img-hand {
+		position: relative;
+		//top: 43px;
+		left: 38px;
+
+		display: inline-block;
+		//width: 100px;
+		//height: 100px;
+		background: url(../images/sprite.png) no-repeat;
+		background-position: 123px 0;
+	}
+
+	&__h {
+		display: block;
+		font-size: 38px;
+		position: relative;
+		top: 43px;
+		left: 30px;
+	}
+
+	&__top_block_l {
+		display: flex;
+		justify-content: space-around;
+		//background: red;
+		padding: 0px 40px 0px 40px;
+	}
+
+	&__img-leg {
+		position: relative;
+		//top: 43px;
+		right: -0px;
+	}
+
+	&__l {
+		//display: inline-block;
+		font-size: 38px;
+		position: relative;
+		top: 43px;
+		left: -2px;
+		//right: -20px;
+	}
+
+	&__top_block_g {
+		display: flex;
+		justify-content: space-around;
+		//background: red;
+		padding: 0px 40px 0px 40px;
+		margin-bottom: 8px; // Из-за длины картинки
+	}
+
+	&__img-gherkin {
+		position: relative;
+		top: 6px;
+		right: 28px;
+	}
+
+	&__g {
+		font-size: 38px;
+		position: relative;
+		top: 43px;
+		right: 30px;
+	}
+
+	// ---------- BOTTOM BLOCK ----------
+
+	&__tile {
+		//background: green;
+		position: relative;
+		flex-direction: column;
+		font-size: 17px;
+		//width: 25%;
+		width: 200px; // 182 px было
+		padding: 2px;
+
+	& .tile__btn {
+		text-align: center;
+		background: red;
+		margin-right: 24px;
+	}
+
+	& .tile__subtitle {
+		text-align: center;
+		background: black;
+	}
+
+	// ----------- HAND ---------
+	& .tile__btn-h {
+		@include red-btn;
+		text-align: center;
+		//background: red;
+		margin-left: 48px;
+		margin-top: 22px;
+
+		width: 138px;
+		//padding: 6px 6px 6px 6px;
+	}
+
+	& .tile__btn-h:hover {
+		@include red-btn-2;
+		text-align: center;
+		//background: red;
+		//margin-left: 0px;
+		//margin-top: 23px;
+	}
+
+	& .tile__btn-h:active {
+		@include red-btn-3;
+		text-align: center;
+		//background: red;
+		//margin-left: 0px;
+		//margin-top: 23px;
+	}
+
+	& .tile__btn-h:after {
+		@include red-btn-4;
+		text-align: center;
+		//background: red;
+		margin-left: 0px;
+		//margin-top: 23px;
+	}
+
+
+	& .tile__subtitle-h {
+		color: #757F89;
+		font-size: 14px;
+		text-align: center;
+		//background: black;
+		margin-left: 44px;
+		margin-top: 6px;
+	}
+
+	& .tile__btn-l {
+		@include red-btn;
+		text-align: center;
+		//background: red;
+		margin-left: 0px;
+		margin-top: 18px;
+
+		width: 135px;
+		//padding: 6px 6px 6px 6px;
+	}
+
+	& .tile__btn-l:hover {
+		@include red-btn-2;
+		text-align: center;
+		//background: red;
+		margin-left: 0px;
+		//margin-top: 23px;
+	}
+
+	& .tile__btn-l:active {
+		@include red-btn-3;
+		text-align: center;
+		//background: red;
+		margin-left: 0px;
+		margin-top: 23px;
+	}
+
+	& .tile__btn-l:after {
+		@include red-btn-4;
+		text-align: center;
+		//background: red;
+		margin-left: 0px;
+		//margin-top: 23px;
+	}
+
+	& .tile__subtitle-l {
+		color: #757F89;
+		font-size: 14px;
+		text-align: center;
+		//background: black;
+		margin-left: -4px;
+		margin-top: 6px;
+	}
+	
+	& .tile__btn-g {
+		@include red-btn;
+		text-align: center;
+		//background: red;
+		margin-right: 44px;
+		margin-top: 18px;
+
+		width: 138px;
+		//padding: 6px 6px 6px 6px;
+	}
+
+	& .tile__btn-g:hover {
+		@include red-btn-2;
+		text-align: center;
+		//background: red;
+		margin-left: 0px;
+		//margin-top: 23px;
+	}
+
+	& .tile__btn-g:active {
+		@include red-btn-3;
+		text-align: center;
+		//background: red;
+		margin-left: 0px;
+		//margin-top: 23px;
+	}
+
+	& .tile__btn-g:after {
+		@include red-btn-4;
+		text-align: center;
+		//background: red;
+		margin-left: 0px;
+		//margin-top: 23px;
+	}
+
+
+	& .tile__subtitle-g {
+		color: #757F89;
+		font-size: 14px;
+		text-align: center;
+		//background: black;
+		margin-right: 46px;
+		margin-top: 6px;
+	}
+
+	}
+
+	&__red--font {
+		color: #D34A3E;
+	}
+
+	&__opacity {
+		opacity: 0.3;
+	}
+}

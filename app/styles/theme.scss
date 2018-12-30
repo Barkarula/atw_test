@@ -1,0 +1,59 @@
+@import 'partials/params';
+@import 'partials/mixins';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Reset standarts of browsers css.
+
+html, body {
+	@include clear;
+	width: 100%;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif; // По умолчанию 
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	@include clear;
+}
+
+a {
+	text-decoration: none;
+}
+
+.view-port {
+	max-width: $view-port;
+	margin: 0 auto ; //margin: 0 auto;
+}
+
+/*
+body.fontLoaded {
+  margin: 0;
+}
+*/
+
+#app {
+}
+
+.app-wrapper {
+	@include clear;
+	background: linear-gradient(#030D17, #063964);
+	font-family: Arial, serif;
+	flex-direction: column;
+	width: 100%;
+	overflow: hidden; // Если э-ты будут выпирать - это нам не нужно
+	justify-content: center; 
+    text-align: center;
+}
+
+.first-screen {
+
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1; // весь контет растягивается по величине блока
+	//height: 100vh; // это значине значит, что мы будем принимать значение высоты равное высоте полностью открытого окна у клиента
+}
+
+// Import theme;
+
+// @import './global-styles.scss'; // have reset to now.
+@import 'theme/first-theme/first-theme.scss';
+
+

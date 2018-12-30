@@ -1,0 +1,246 @@
+// ---------- Css-Line ----------
+
+// Эти значиния нужно привести в соответствие
+// RIGHT: left: -111px;
+// LEFT: left: -90px;
+$size_l: -42px;
+$size_r: $size_l + 86px; // Справа длина слова
+$mg-top: -126px;
+
+$left: 180px;
+$right: 270px;
+
+.css-line {
+	//display: flex;
+	margin-top: $mg-top;
+	margin-bottom: 146px;
+    margin-right: 0px; //-40
+	width: 900px;
+	//left: 200px;
+
+	// lEFT
+
+	&__left{
+    //position: relative;
+    //top: 0px;
+    //left: $size_l;
+    left: $left; // FIX
+    border: 0; 
+    height: 3px; 
+    width: 100%;
+    //width: 400px;
+
+   
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+	}
+
+	&__l {
+	//display: flex;
+    //position: relative;
+    //top: 0px;
+    //left: 0px; // так надо 
+    height: 3px; 
+    min-height: 3px; 
+    width: 100%;
+    //width: 400px;
+    background-image: -webkit-linear-gradient(right, rgba(255,255,255,0.1), rgba(0,0,0,0)); 
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+    
+	}
+
+	&__l-sub {
+	//display: flex;
+    //position: relative;
+    //top: 0px;
+    //left: 0px;
+    height: 3px; 
+    min-height: 2px; 
+    width: 100%;
+    //width: 400px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4)); 
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+	}
+
+	// RIGHT
+
+	&__right{
+    //position: relative;
+    //top: 0px;
+    //left: $size_r;
+    left: $right;  // FIX
+    //border: 0; 
+    height: 3px; 
+    width: 100%;
+    //width: 400px;
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+	}
+
+	&__r {
+	//display: flex;
+    //position: relative;
+    //top: 0px;
+    //left: 0px;
+    border: 0; 
+    height: 3px;
+    min-height: 3px; 
+    width: 100%; 
+    //width: 400px;
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(255,255,255,0.1)); 
+    //margin: 10px 20px 0 0px;
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+}
+
+    &__r-sub {
+	//display: flex;
+    //position: relative;
+    top: 0px;
+    left: 200px;
+    border: 0; 
+    height: 3px;
+    min-height: 2px; 
+    width: 100%; 
+    //width: 400px;
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,0.4)); 
+    //margin: 10px 20px 0 0px;
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+	}
+}
+
+
+
+// ----------- Old ----------
+
+
+/*
+
+.css-line {
+    display: flex;
+    margin-top: $mg-top;
+    margin-bottom: 146px;
+    width: 900px;
+    left: 200px;
+
+    // lEFT
+
+    &__left{
+    //position: relative;
+    //top: 0px;
+    //left: $size_l;
+    left: $left; // FIX
+    border: 0; 
+    height: 3px; 
+    width: 100%;
+    //width: 400px;
+
+    border-top: 2px red;
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+    }
+
+    &__l {
+    display: flex;
+    //position: relative;
+    //top: 0px;
+    //left: 0px; // так надо 
+    height: 3px; 
+    min-height: 3px; 
+    width: 100%;
+    //width: 400px;
+    background-image: -webkit-linear-gradient(right, rgba(255,255,255,0.1), rgba(0,0,0,0)); 
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+    }
+
+    &__l-sub {
+    display: flex;
+    //position: relative;
+    //top: 0px;
+    //left: 0px;
+    height: 3px; 
+    min-height: 2px; 
+    width: 100%;
+    //width: 400px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4)); 
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+    }
+
+    // RIGHT
+
+    &__right{
+    //position: relative;
+    //top: 0px;
+    //left: $size_r;
+    left: $right;  // FIX
+    //border: 0; 
+    height: 3px; 
+    width: 100%;
+    //width: 400px;
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+    }
+
+    &__r {
+    display: flex;
+    //position: relative;
+    //top: 0px;
+    //left: 0px;
+    border: 0; 
+    height: 4px;
+    min-height: 3px; 
+    width: 100%; 
+    //width: 400px;
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(255,255,255,0.1)); 
+    //margin: 10px 20px 0 0px;
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+}
+
+    &__r-sub {
+    display: flex;
+    //position: relative;
+    top: 0px;
+    left: 200px;
+    border: 0; 
+    height: 3px;
+    min-height: 2px; 
+    width: 100%; 
+    //width: 400px;
+    background-image: -webkit-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,0.9)); 
+    //margin: 10px 20px 0 0px;
+
+    //position: default;
+    //@include clear;
+    //@include flex-center;
+    }
+}
+
+
+*/

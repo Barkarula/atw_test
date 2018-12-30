@@ -1,0 +1,96 @@
+// ---------- MoneyBox ----------
+
+$font-color: #fff;
+$moneybox-height: 231px;
+
+.moneybox {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;  
+	align-items: center;
+	flex: 0 0 $moneybox-height;
+
+	color: #fff;
+	//background: blue;
+
+	&__title-factory {
+		margin-top: 34px;
+		font-size: 48px;
+		font-weight: bold;
+		//background: red;
+	}
+
+	&__title-moneybox {
+		color: $blue;
+		//@include css-line;
+		margin-top: 37px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	&__coins {
+		margin: -7px 10px 0px 0px;
+		//align-items: center;
+   		color: $blue;
+	}
+
+	&__items {
+		//background: green;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+	} 
+
+	&__coin-count {
+		display: block;
+		//justify-content: center; 
+		//position: releative;
+		//top: -20px;
+		margin-top:  29px;
+		margin-right: -10px;
+		font-size: 12px;
+		align-item: center;
+		color: white;
+	}
+
+	&__none {
+		display: none !important;
+	}
+
+	&__article {
+
+	}
+
+	&__idcoin {
+		//margin: 0px -6px 0px;
+		//background: url('../../img/coin.svg') no-repeat;
+		//background-size: cove; // Чтобы картинка корректно растягивалась по всей шириние.
+	}
+
+	&__block {
+		width: 25px;
+  		height: 28px;
+  		margin: 0 0 0 0;
+ 		//background: url(images/coin.svg) no-repeat;
+  		font-size: 0;
+  		margin: 0px 0px 0px -20px;
+	}
+
+	&__add {
+		@include flex-center;
+		flex: 0 0 49px;
+	  	font-size: 12px;
+  		font-weight: normal;
+  		text-decoration: underline dotted;
+  		color: white;
+	}
+
+	&__add-btn {
+		outline: none;
+	}
+
+	&__no_money {
+		margin-top: 30px;
+	}
+}

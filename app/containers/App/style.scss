@@ -1,0 +1,66 @@
+// --------- MONEY BOX --------------
+
+// ----- MARKET PLACE -------
+
+// -------- PRODUCTION ----------
+
+.tooltip .tooltiptext {
+    //visibility: hidden;
+    width: 108px;
+    height: 50px;
+    background-color: #C1CBD4;
+    color: #173857;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 4px 5px;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    font-size: 9px;
+
+    //margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    //border-width: 5px;
+    border-width:40px 0px 0 8px;
+    border-style: solid;
+    border-color: #C1CBD4 transparent transparent transparent;
+}
+
+.tooltip {
+    font-size: 12px;
+
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    margin: 230px 90px 0 -110px;
+}
+
+// CUCUMBER BAR
+
+// GENDER-BAR
+
+.btnIsActive_gender {
+   background: red;
+}
+
+
+.tooltiptext {
+  position:relative;
+  right: -20px;
+  max-width: 200px;
+}
+
+.tooltip .tooltiptext {
+  width: 120px;
+   word-wrap: break-word
+}

@@ -1,0 +1,174 @@
+@mixin clear {
+	margin: 0;
+	padding: 0;
+}
+
+@mixin clear-list {
+	@include clear;
+	list-style: none;
+}
+
+@mixin flex-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+// --------------- GREEN BUTTON --------------
+
+@mixin green-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  //text-shadow: rgba(255,255,255,.5) 0px 0px 0px, rgba(0,0,0,.1) .0m 0em .0em;
+  //text-shadow: 1px 1px 2px black, 0 0 1em black;
+  text-shadow: -1px 1px 1px #000;
+  text-decoration: none;
+  user-select: none;
+  margin: .5em;
+  margin: -12px 0 0 0;
+  //padding: .5em .6em .4em .6em;
+  padding: 7px 6px 7px 6px;
+  border-radius: 20px;
+  //border-top: 1px solid rgba(255,255,255,.1);
+  //border-bottom: 1px solid rgba(0,0,0,.1);
+  outline: none;
+  background: #25932E radial-gradient(rgba(255,255,255,0), rgba(255,255,255,.5));
+  background-image: -webkit-linear-gradient( #25932E, #99BB71);
+  transition: background .2s ease-in-out;
+}
+
+@mixin green-btn-2 {
+	background-image: -webkit-linear-gradient( #006E09, #6B8D43);
+  transition: background .2s ease-in-out;	
+}
+
+@mixin green-btn-3 {
+  top: .2em;
+  color: rgba(254,255,255,.9);
+  text-shadow: rgba(0,0,0,.2) 0 1px 2px;
+  box-shadow:
+   inset rgba(255,255,255,.6) 0 .3em .3em,
+   inset rgba(0,0,0,.2) 0 -.1em .3em,
+   rgba(0,0,0,.4) 0 .1em 1px,
+   rgba(0,0,0,.3) 0 .2em 6px;
+}
+
+@mixin green-btn-4 {
+  content:  "";
+  position:  absolute; 
+  //width:   90%;
+  width: 92%;
+  height:  60%;
+  top:   0;
+  //left:   5%;  
+  left: 4%;  
+  border-radius: .9em .9em 3em 3em / 1em 1em 1em 1em;
+  background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.15)); 
+}
+
+@mixin green-btn-5 {
+  opacity: .6;
+}
+
+// ------------- RED BUTTON --------------
+
+@mixin red-btn {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  //text-shadow: rgba(255,255,255,.5) 0px 0px 0px, rgba(0,0,0,.1) .0m 0em .0em;
+  //text-shadow: 1px 1px 2px black, 0 0 1em black;
+  text-shadow: -1px 1px 1px #000;
+  text-decoration: none;
+  user-select: none;
+  margin: .5em;
+  margin: -12px 0 0 0;
+  //padding: .5em .6em .4em .6em;
+  padding: 7px 6px 7px 6px;
+  border-radius: 20px;
+  //border-top: 1px solid rgba(255,255,255,.1);
+  //border-bottom: 1px solid rgba(0,0,0,.1);
+  outline: none;
+  background: #C92F31 radial-gradient(rgba(255,255,255,0), rgba(255,255,255,.5));
+  background-image: -webkit-linear-gradient( #C92F31, #DC5051);
+  transition: background .2s ease-in-out;
+}
+
+@mixin red-btn-2 {
+	background-image: -webkit-linear-gradient( #9A0002, #AA1E1F);	
+}
+
+@mixin red-btn-3 {
+  top: .2em;
+  color: rgba(254,255,255,.9);
+  text-shadow: rgba(0,0,0,.2) 0 1px 2px;
+  box-shadow:
+   inset rgba(255,255,255,.6) 0 .3em .3em,
+   inset rgba(0,0,0,.2) 0 -.1em .3em,
+   rgba(0,0,0,.4) 0 .1em 1px,
+   rgba(0,0,0,.3) 0 .2em 6px;
+}
+
+@mixin red-btn-4 {
+  content:  "";
+  position:  absolute; 
+  //width:   90%;
+  width: 92%;
+  height:  60%;
+  top:   0;
+  //left:   5%;  
+  left: 4%;  
+  border-radius: .9em .9em 3em 3em / 1em 1em 1em 1em;
+  background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.15)); 
+}
+
+@mixin red-btn-5 {
+  opacity: .6;
+}
+
+// ------------- BAR BUTTON --------------
+
+@mixin bar-btn {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  //text-decoration: none;
+  text-decoration: underline dotted;
+  user-select: none;
+  padding: 4px 8px;
+  outline: none;
+  border-radius: 2px;
+  margin: 0 0 0 -2px;
+}
+@mixin bar-btn-2 {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;  /* для больших картинок 0 */
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+@mixin bar-btn-3 {
+  //background: linear-gradient(#ececeb, #eaeaea);
+  background: linear-gradient(rgba(0,13,57,.2), rgba(18,65,207,.1));
+  background-image: linear-gradient(rgba(0,13,57,.5), rgba(10,56,107,.3));
+  box-shadow:
+   inset rgba(0,0,0,.08) 0 1px 2px,
+   inset rgba(0,0,0,.01) 0 -1px 0,
+   #333 0 1px 1px;
+   text-decoration: none;
+}
+@mixin bar-btn-4 {
+  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.1));
+  box-shadow:
+   inset rgba(0,0,0,.8) 0 1px 2px,
+   inset rgba(0,0,0,.05) 0 -1px 0,
+   #fff 0 1px 1px;
+   text-decoration: none;
+}

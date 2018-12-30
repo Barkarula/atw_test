@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.1//EN'
+  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg height="600" version="1.1" width="700" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs/>
+  <filter id="SVGID_0"  y="-40%" height="180%" width='120%'>
+    <feGaussianBlur in="SourceGraphic" stdDeviation="8.6"/>
+    <feOffset dx="0" dy="0"/>
+    <feMerge>
+      <feMergeNode/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <path d="M 0 83 Q 0 83 0 83 Q 0 83 6 79.5 Q 12 76 17 71 Q 22 66 30.5 57.5 Q 39 49 54 36 Q 69 23 82.5 16.5 Q 96 10 120 4.5 Q 144 -1 170.5 0 Q 197 1 218 16.5 Q 239 32 253.5 51 Q 268 70 278 83.5 Q 288 97 299 110 Q 310 123 320 129.5 Q 330 136 338 136.5 Q 346 137 355 129.5 L 364 122" stroke-linecap="round" style="stroke: #0e7; stroke-width: 13; fill: none; filter: url(#SVGID_0);" transform="translate(50 50)" opacity="0.9" />
+</svg>

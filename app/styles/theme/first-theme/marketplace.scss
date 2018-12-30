@@ -1,0 +1,210 @@
+// ---------- Marketplace ----------
+
+$mg-hand: -22px;
+$mg-leg: -6px;
+$mg-cuc: -6px;
+
+.marketplace {
+	display: flex;
+	flex-direction: column; 
+	justify-content: space-around; 
+	flex: 0 0 200px;
+
+	color: #fff;
+	//background: blue;
+
+	&__header {
+		color: $blue;
+		display: flex;
+		justify-content: center;
+		//border-top: 1px solid green;// $border-color;
+		margin-top: 35px;
+		//top: 20px;
+
+	}
+
+	&__tiles {
+		display: flex;
+		//justify-content: center;
+		margin-top: 0px;
+		//margin-bottom: 80px;
+		height: 100px;
+		//width: 400px;
+		//background: orange;
+	}
+
+	&__tile {
+		display: flex;
+		//justify-content: space-around; 
+		justify-content: center; 
+		//background: green;
+		position: relative;
+		flex-direction: column;
+		height: 70px;
+		//width: 33%;
+		//width: 400px;
+		//padding: 2px;
+
+		margin: -5px 0px 0px 46px;
+		padding: 0px px 0px 10px;
+
+	& .tile__btn {
+		@include green-btn;
+		//background: black;
+		text-align: center;
+		width: 136px;
+		//margin: -2px 20px auto 20px;
+		//margin-right: 22px;
+		margin-left: $mg-hand;
+		margin-top: -20px;
+	}
+
+	& .tile__btn:hover {
+		@include green-btn-2;
+		//background: black;
+		text-align: center;
+		//width: 200px;
+	}
+
+	& .tile__btn:active {
+		@include green-btn-3;
+		//background: black;
+		text-align: center;
+		//width: 200px;
+	}
+
+	& .tile__btn:after {
+		@include green-btn-4;
+		//background: black;
+		text-align: center;
+		//width: 160px;
+	}
+
+	& .tile__btn:active:after {
+		@include green-btn-5;
+	}
+
+	& .tile__btn-leg {
+		@include green-btn;
+		display: flex;
+		justify-content: center; 
+		//background: white;
+		text-align: center;
+		width: 140px;
+
+		margin-left: $mg-leg;
+		margin-top: -20px;	
+	}
+
+	& .tile__btn-leg:hover {
+		@include green-btn-2;
+		//background: black;
+		text-align: center;
+		//width: 200px;
+	}
+
+	& .tile__btn-leg:active {
+		@include green-btn-3;
+		//background: black;
+		text-align: center;
+		//width: 200px;
+	}
+
+	& .tile__btn-leg:after {
+		@include green-btn-4;
+		//background: black;
+		text-align: center;
+		//width: 200px;
+	}
+
+
+	& .tile__btn-cuc {
+		@include green-btn;
+		display: flex;
+		justify-content: center; 
+		//background: white;
+		text-align: center;
+		width: 160px;
+		margin-left: $mg-cuc;
+		margin-top: -20px;
+	}
+
+	& .tile__btn-cuc:hover {
+		@include green-btn-2;
+		//background: black;
+		text-align: center;
+		//width: 200px;
+	}
+
+	& .tile__btn-cuc:active {
+		@include green-btn-3;
+		//background: black;
+		text-align: center;
+		//width: 200px;
+	}
+
+	& .tile__btn-cuc:after {
+		@include green-btn-4;
+		//background: black;
+		text-align: center;
+		//width: 200px;
+	}
+
+	& .tile__subtitle {
+		display: block;
+		//justify-content: center; 
+		//background: black;
+		font-size: 14px;
+		text-align: center;
+		//width: 150px;
+		//margin: 0px 0px 0px 0px;
+		//left: 10px;
+		//padding: 0 0 0 0;
+
+		color: #757F89;
+		margin-right: 21px;
+		padding-top: 8px;
+	}
+
+	& .tile__subtitle-leg {
+		display: block;
+		position: relative;
+		//justify-content: center; 
+		//background: black;
+		font-size: 14px;
+		text-align: center;
+		//width: 150px;
+		//margin: 0px 0px 0px 0px;
+		//left: 10px;
+		//padding: 0 0 0 0;
+		margin-right: 8px;
+		//margin-bottom: -10px; // !!!
+		//padding-top: 15px;
+
+		color: #757F89;
+		padding-top: 8px;
+	}
+
+	& .tile__subtitle-cuc {
+		display: block;
+		//justify-content: center; 
+		//background: black;
+		font-size: 14px;
+		text-align: center;
+		//width: 150px;
+		//margin: 0px 0px 0px 0px;
+		//left: 10px;
+		//padding: 0 0 0 0;
+
+		color: #757F89;
+		margin-right: 12px;
+		padding-top: 8px;
+	}
+
+	}
+
+	&__opacity {
+		opacity: 0.3;
+	}
+
+}

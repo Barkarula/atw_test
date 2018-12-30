@@ -1,0 +1,79 @@
+// ---------- Line ----------
+
+// Переместить линию по x
+$mg-top: -48px;
+$mg-bot: $mg-top;
+// Длина слова
+$t-center: 186px;
+$width: 350px;
+
+.line_2 {
+	display: flex;
+	flex-direction: column; 
+	justify-content: space-around; 
+	flex: 0 0 10;
+
+	color: #fff;
+	background: blue;
+
+	&__tiles_2 {
+		display: flex;
+		justify-content: space-around;
+		margin-top: $mg-top;
+		//margin-bottom: $mg-bot;
+		height: 6px;
+		//background: orange;
+	}
+
+	&__tile_2 {
+		display: flex;
+		//position: relative;
+		flex-direction: column;
+		//width: 1300px; // !)
+		padding: 0px;
+		align-items: center;
+		justify-content: center;
+		//background: green;
+	}
+
+	&__tile-line-l_2 {
+		display: flex;
+		width: $width;
+		text-align: center;
+		background-image: -webkit-linear-gradient(right, rgba(255,255,255,0.1), rgba(0,0,0,0)); 
+	}
+		&__tile-line-l-sub_2 {
+		display: flex;
+		width: $width;
+		text-align: center;
+		background-image: -webkit-linear-gradient(right, rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+	}
+
+	&__tile-line-center_2 {
+		display: flex;
+		width: $t-center;
+		text-align: center;
+		justify-content: center;
+	}
+
+	&__tile-line-r_2 {
+		display: flex;
+		width: $width;
+		text-align: center;
+		background-image: -webkit-linear-gradient(left, rgba(255,255,255,0.1), rgba(0,0,0,0)); 
+	}
+
+	&__tile-line-r-sub_2 {
+		display: flex;
+		width: $width;
+		text-align: center;
+		background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0)); 
+	}
+
+	&__p_2 {
+		color: red;
+		visibility: none;
+		opacity: 0;
+		// http://shpargalkablog.ru/2012/12/display-visibility-css.html
+	}
+}
